@@ -15,7 +15,7 @@ node {
         }
 
         stage("Deploy") {
-            if (env.BRANCH_NAME == "main || master") {
+            if (env.BRANCH_NAME == "main") {
                 printMessage("Deploying to main branch")
             } else {
                 printMessage("No deployment specified for this branch")
