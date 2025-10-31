@@ -2,6 +2,7 @@ node {
     printMessage("Pipeline Start")
 
     stage("Fetch Source Code") {
+        git branch: 'main'
         git 'https://github.com/mandeepmails/ActivityA'
     }
 
